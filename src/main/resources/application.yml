@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+dubbo:
+  application:
+    name: cyqTest
+  protocol:
+    dispatcher: message
+    name: dubbo
+    port: -1
+  registry:
+    protocol: zookeeper
+    address: 47.99.2.51:2181,47.99.2.51:2182,47.99.2.51:2183
+    register: false
+  config-center:
+    timeout: 5000
+  scan:
+    basePackages: com.guahoa.cyqTest.dubbo
+  provider:
+    timeout: 3000
+  consumer:
+    timeout: 3000
+    check: false
