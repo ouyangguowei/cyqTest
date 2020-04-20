@@ -10,7 +10,7 @@ dubbo:
     port: -1
   registry:
     protocol: zookeeper
-    address: 47.99.2.51:2181,47.99.2.51:2182,47.99.2.51:2183
+    address: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183
     register: false
   config-center:
     timeout: 5000
